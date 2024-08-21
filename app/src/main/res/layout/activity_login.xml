@@ -6,28 +6,34 @@
 
     <TextView
         android:id="@+id/title"
+        style="@style/StyleTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/space_large"
-        android:textStyle="bold"
-        android:textColor="@color/textTitlePrimary"
         android:text="@string/feat_login_welcome"
-        app:layout_constrainEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/subtitle"
+        style="@style/StyleSubtitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/space_large"
-        android:layout_marginTop="@dimen/space_small"
-        android:layout_marginBottom="@dimen/space_large"
-        android:text="@string/feat_login_subtitle"
-        android:textSize="@dimen/text_size_small"
         android:fontFamily="sans-serif-light"
+        android:text="@string/feat_login_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/StyleBodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/feat_login_username"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
